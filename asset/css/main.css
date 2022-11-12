@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.CommonpaddingSection{
+    padding: 1rem 16px;
+    text-align: center;
+}
+
+.container{
+    max-width: 1500px;
+    padding: 0;
+}
+
+/* Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fd883f;
+    transition: all .5s; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2c66af;
+    transition: all .5s;
+  }
+
+/* Scroll */
+
+/* Left side menu start */
+    .MainDiv{
+        position: relative;
+    }
+
+    .LeftSudeNav{
+        position: absolute;
+        width: var(--lef-Bg-width);
+        background: var(--bg-left);
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 20px 10px;
+        left: 0;
+        box-shadow: 0 0 5px #bababa;
+    }
+
+    .SellcenterLogo{
+        margin-bottom: 2rem;
+    }
+
+    .LeftSudeNav img{
+        width: 60%;
+        margin: auto;
+    }
+
+    .LeftSideList ul{
+        list-style: none;
+        padding: 0px 10px;
+    }
+
+    .LeftSideList ul li{
+        padding: 6px;
+    }
+/* Left side menu end */
+
+/* main div start */
+    .MainDivBody{
+        width: calc(100% - var(--lef-Bg-width));
+        height: 100vh;
+        /* background-color: #ff863f; */
+        margin-left: var(--lef-Bg-width);
+    }
+/* main div end */
+
+/* responsive start */
+    /* laptop */
+    @media screen and (max-width: 1440px) {
+        
+    }
+
+    /* tabe */
+    @media screen and (max-width: 950px) {
+        
+    }
+
+    /* mobile */
+    @media screen and (max-width: 575px) {
+        
+    }
+/* responsive end */
+
+:root {
+    --logoColor-1: #2c66af;
+    --logoColor-2: #ff863f;
+    --servocehover: #e79855;
+    --footer_font: white;
+    --bg-left: #dae7f7;
+    --lef-Bg-width: 250px;
+}
