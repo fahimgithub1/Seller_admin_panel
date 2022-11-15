@@ -13,14 +13,41 @@ img{
     width: 100%;
 }
 
+button,
+.button{
+    border: none;
+    outline: 0;
+    border-radius: 7px;
+    padding: 6px 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--logoColor-2);
+    text-decoration: none;
+}
+
+button:hover,
+.button:hover{
+    background-color: var(--logoColor-1);
+    color: white;
+}
+
 .CommonpaddingSection{
     padding: 1rem 16px;
     text-align: center;
 }
 
 .container{
-    max-width: 1500px;
+    max-width: 100%;
     padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tag{
+    color: #848484;
 }
 
 /* Scroll */
@@ -56,12 +83,11 @@ img{
     }
 
     .LeftSudeNav{
-        position: absolute;
+        position: fixed;
         width: var(--lef-Bg-width);
         background: var(--bg-left);
         height: 100vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        overflow: none;
         padding: 20px 10px;
         left: 0;
         box-shadow: 0 0 5px #bababa;
@@ -78,7 +104,11 @@ img{
 
     .LeftSideList{
         font-weight: 500;
-        font-size: 19px;
+        font-size: 17px;
+        height: 78vh;
+        background: var(--bg-left);
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .LeftSideList ul{
@@ -88,12 +118,27 @@ img{
 
     .LeftSideList ul li{
         padding: 6px;
+        cursor: pointer;
     }
 
-    .LeftSideList ul li:hover{
+    .LeftSideList ul li:hover {
         background: var(--logoColor-2);
         color: white;
         border-radius: 7px;
+    }
+
+    .LeftSideList ul li a{
+        color: black;text-decoration: none;
+    }
+
+    .LeftSideListA{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .LeftSideList ul li:hover .LeftSideListA{
+        color: white !important;
     }
 
     .LeftIconSpan{
@@ -110,6 +155,19 @@ img{
         box-shadow: 0 0 3px #2c66af;
         font-size: 18px;
     }
+
+    .LeftSideList ul li .card-body{
+        background: none;
+        color: black;
+        border: 0;
+        margin-left: 38px;
+        padding: 5px;
+        font-size: 17px;
+    }
+
+    .LeftSideList ul li .card-body:hover .card-bodyA{
+        color: var(--logoColor-1);
+    }
 /* Left side menu end */
 
 /* main div start */
@@ -121,13 +179,20 @@ img{
     }
 
     /* fixed in top start */
+    .mobileTop{
+        display: none !important;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .FixedinTop{
-        position: absolute;
-        width: 100%;
+        position: fixed;
+        width: calc(100% - var(--lef-Bg-width));
         height: 55px;
         background-color: var(--logoColor-1);
         padding: 0 10px;
         color: white;
+        z-index: 10;
     }
 
     .TopIcon{
@@ -176,9 +241,132 @@ img{
         box-shadow: 0 0 4px #848484;
         cursor: pointer;
     }
+    
+    .Top-logo{
+        display: none;
+    }
     /* fixed in top end */
 
+    .MainDivBody    {
+        position: relative;
+    }
+
+    .MainBox{
+        position: absolute;
+        padding: 20px;
+        margin-top: 55px;
+        width: 100%;
+    }
+
+    .PtheTitle{
+        margin-top: var(--Margin-Top);
+    }
+
+    .UperPath{
+        color: #000000;
+    }
+
+    /* Tabile Box start */
+    .card{
+        overflow: hidden;
+    }
+
+    .TabileBox,
+    .EditLeftSide,
+    .card-input .card-body{
+        background-color: #f4f7fb;
+        box-shadow: 0 0 8px #dedada;
+    }
+    
+    .TabileBox,
+    .EditminDIv{
+        margin-top: var(--Margin-Top);
+        margin-bottom: var(--Margin-Top);
+        border-radius: 7px;
+    }
+    
+    .EditLeftSide{
+        padding: 20px;
+    }
+
+    .TabileBox .TabileSearch {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .TabileBox .TabileSearch input{
+        border-radius: 5px;
+        padding: 10px;
+        height: 37px;
+        border: 1px solid #cacaca;
+        outline: none;
+        padding-left: 36px;
+    }
+
+    .TabileSearch{
+        position: relative;
+    }
+
+    .TabileSearch .serchIcon{
+        position: absolute;
+        top: 0;
+        left: 26px;
+        top: 21px;
+        color: #6c6c6c;
+    }
+    /* Tabile Box End */
+
+    .TableDiv{
+        padding: 0px 15px;
+    }
+
+    .table input{
+        height: 15px;
+        width: 15px;
+    }
+
+    .ChekBoxTr{
+        width: 31px;
+    }
+
+    .btnCol{
+        width: 50px;
+    }
+
+    .btnCol button{
+        background: none;
+        color: black;
+    }
+
+    .btnCol i{
+        font-size: 23px;
+    }
+
+    .Visibility{
+        font-size: 14px;
+        text-align: center;
+        border-radius: 4px;
+        padding: 3px 8px;
+        color: black;   
+    }
+
+    .hidden{
+        background-color: rgb(216 216 216);
+    }
+
+    .visibl{
+        background-color: #245900;
+        color: white;
+    }
+
+    .visiblRed{
+        background-color: #900;
+        color: white;
+    }
 /* main div end */
+
+/* copy */
+
 
 /* responsive start */
     /* laptop */
@@ -188,12 +376,83 @@ img{
 
     /* tabe */
     @media screen and (max-width: 950px) {
+        .LeftSudeNav{
+            display: none;
+            z-index: 100;
+        }
         
+        .MainDivBody{
+            width: 100%;
+            height: 100vh;
+            margin-left: 0;
+            position: relative;
+        }
+
+        .MainBox {
+            padding: 9px 20px;
+        }
+        
+        .FixedinTop {
+            display: none !important;
+        }
+
+        .Top-logo{
+            display: block;
+            width: 100px;
+            margin-right: .5rem;
+        }
+
+        .mobileTop{
+            display: block !important;
+            width: 100%;
+            height: 80px;
+            background-color: var(--bg-left);
+            color: black;
+            padding: 0 10px;
+        }
+
+        .mobilelogo{
+            width: 100%;
+        }
+
+        .SearchForm2{
+            width: 100%;
+        }
+
+        .TopSearch{
+            margin-right: -29px;
+        }
+
+        .MainBox{
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (max-width: 814px) {
+        .TopSearch{
+            margin-right: -15px;
+        }
+    }
+
+    @media screen and (max-width:  766px) { 
+        .notification{
+            display: none;
+        }
+
+        .sercedivmobile{
+            display: none;
+        }
+
+        .mobileTop{
+            height: 92px;
+        }
     }
 
     /* mobile */
     @media screen and (max-width: 575px) {
-        
+        /* .TopSearch{
+            margin-right: -15px;
+        } */
     }
 /* responsive end */
 
@@ -204,4 +463,5 @@ img{
     --footer-font: white;
     --bg-left: #dae7f7;
     --lef-Bg-width: 270px;
+    --Margin-Top: 40px;
 }

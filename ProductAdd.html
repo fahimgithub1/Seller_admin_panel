@@ -69,7 +69,7 @@
 
                                     <div class="card card-body">
                                         <a href="./ProductAdd.html" class="card-bodyA">
-                                            Product Upload
+                                            Product Add
                                         </a>
                                     </div>
                                     
@@ -275,20 +275,6 @@
                                         Sellar Document
                                     </div>
                                 </a>
-
-                                <!-- <div class="collapse" id="collapseExample6">
-                                    <div class="card card-body">
-                                        <a href="#" class="card-bodyA">
-                                            Profile
-                                        </a>
-                                    </div>
-                                    
-                                    <div class="card card-body">
-                                        <a href="#" class="card-bodyA">
-                                            User Mabagerment
-                                        </a>
-                                    </div>
-                                </div> -->
                             </li>
                         </ul>
                     </div>
@@ -296,14 +282,14 @@
                 <!-- left side navigation end -->
 
                 <div class="MainDivBody">
-                    <!-- fixd in top start laptop -->
-                    <div class="FixedinTop d-flex FixedinTop justify-content-between align-items-center">
+                    <!-- fixd in top start -->
+                    <div class="FixedinTop d-flex justify-content-between align-items-center">
                         <div class="TopSearch d-flex align-items-center">
                             <div class="TopIcon">
                                 <i class="fa-sharp fa-solid fa-bars"></i>
                             </div>
 
-                            <div class="TopSearch">
+                            <div>
                                 <form class="SearchForm">
                                     <input type="text" >
                                 </form>
@@ -324,58 +310,147 @@
                             <div>User Name</div>
                         </div>
                     </div>
-                    <!-- fixd in top end laptop -->
-                    
-                    <!-- fixd in top start mobile -->
-                    <div class="mobileTop d-flex justify-content-between align-items-center">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-3 col-md-1 col-sm-1">
-                                <div class="TopIcon" id="TopIcon">
-                                    <i class="fa-sharp fa-solid fa-bars"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-5 col-md-2 col-sm-3">
-                                <img class="mobilelogo" src="./asset/images/Jamidar.png" alt="">
-                            </div>
-
-                            <div class="col-0 col-md-7 col-sm-7 sercedivmobile">
-                                <div class="TopSearch">
-                                    <form class="SearchForm SearchForm2">
-                                        <input type="text" >
-                                    </form>
-                                </div> 
-                            </div>
-                        
-                            <div class="col-4 col-md-2 col-sm-2">
-                                <div class="TopUser d-flex align-items-center justify-content-end">
-                                    <div class="notification float-right">
-                                        <i class="fa-solid fa-bell"></i>
-                                        <span class="NotificationCont">
-                                            0 
-                                        </span>
-                                    </div>
-        
-                                    <div class="TopIcon float-right" id="TopIcon">
-                                        <i class="fa-solid fa-user-tie"></i>
-                                    </div>
-                                    <!-- <div>User Name</div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- fixd in top end mobile -->
+                    <!-- fixd in top end -->
 
                     <!-- main body start -->
                     <div class="MainBox">
                         <div class="PtheTitle">
-                            <div class="UperPath">
-                                <span>
-                                    <a href="./index.html" class="tag">Dashboard</a>
-                                </span>
+                            <div class="PtheTitle d-flex flex-warp justify-content-between align-items-center">
+                                <div class="UperPath">
+                                    <span>
+                                        <a href="./index.html" class="tag">Dashboard</a>
+                                    </span>
+                                    / 
+                                    <span> 
+                                        <a href="./ProductLitst.html" class="tag">Products List</a>
+                                    </span>
+                                    / 
+                                    <span>
+                                        <a href="./ProductAdd.html" class="tag">Edit Product</a>
+                                    </span>
+
+                                    <h3>Edit Product</h3>
+                                </div>
+                                
+                                <div>
+                                    <a href="./ProductAdd.html" class="button"> 
+                                        <i class="fa-regular fa-plus"></i> 
+                                        New Product
+                                    </a>
+                                </div>
                             </div>
-                            <h3>Dashboard</h3>
+                        </div>
+
+                        <div class="EditminDIv w-100">
+                            <div class="sa-entity-layout" data-sa-container-query='{"920":"sa-entity-layout--size--md","1100":"sa-entity-layout--size--lg"}'>
+                                <div class="sa-entity-layout__body">
+                                    <div class="row">
+                                        <div class="col-lg-8 col-md-7 pr-1">
+                                            <div class="sa-entity-layout__main">
+                                                <div class="card card-input">
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="mb-4"><h4 class="mb-0 fs-exact-18">Basic information</h4></div>
+                                                        <div class="mb-4"><label for="form-product/name" class="form-label">Name</label><input type="text" class="form-control" id="form-product/name" value="Brandix Screwdriver SCREW150" /></div>
+                                                        <div class="mb-4">
+                                                            <label for="form-product/slug" class="form-label">Slug</label>
+                                                            <div class="input-group input-group--sa-slug">
+                                                                <span class="input-group-text" id="form-product/slug-addon">https://example.com/products/</span>
+                                                                <input type="text" class="form-control" id="form-product/slug" aria-describedby="form-product/slug-addon form-product/slug-help" value="brandix-screwdriver-screw150" />
+                                                            </div>
+                                                            <div id="form-product/slug-help" class="form-text">Unique human-readable product identifier. No longer than 255 characters.</div>
+                                                        </div>
+                                                        <div class="mb-4">
+                                                            <label for="form-product/description" class="form-label">Description</label>
+                                                            <textarea id="form-product/description" class="sa-quill-control form-control" rows="8">
+                                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare, mi in ornare elementum, libero nibh lacinia urna, quis convallis lorem erat at purus. Maecenas eu varius nisi.
+                                                            </textarea>
+                                                        </div>
+                                                        <div><label for="form-product/short-description" class="form-label">Short description</label><textarea id="form-product/short-description" class="form-control" rows="2"></textarea></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card card-input mt-5">
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="mb-4"><h4 class="mb-0 fs-exact-18">Pricing</h4></div>
+                                                        <div class="row g-4">
+                                                            <div class="col"><label for="form-product/price" class="form-label">Price</label><input type="number" class="form-control" id="form-product/price" value="1499" /></div>
+                                                            <div class="col"><label for="form-product/old-price" class="form-label">Old price</label><input type="number" class="form-control" id="form-product/old-price" /></div>
+                                                        </div>
+                                                        <div class="mt-4 mb-n2"><a href="#">Schedule discount</a></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card card-input mt-5">
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="mb-4"><h4 class="mb-0 fs-exact-18">Inventory</h4></div>
+                                                        <div class="mb-4"><label for="form-product/sku" class="form-label">SKU</label><input type="text" class="form-control" id="form-product/sku" value="SCREW150" /></div>
+                                                        <div class="mb-4 pt-2">
+                                                            <label class="form-check"><input type="checkbox" class="form-check-input" /><span class="form-check-label">Enable stock management</span></label>
+                                                        </div>
+                                                        <div><label for="form-product/quantity" class="form-label">Stock quantity</label><input type="number" class="form-control" id="form-product/quantity" value="18" /></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card card-input mt-5">
+                                                    <div class="card-body py-3 px-4">
+                                                        <div class="mb-4">
+                                                            <h4 class="mb-0 fs-exact-18">Search engine optimization</h4>
+                                                            <div class="mt-3 text-muted">Provide information that will help improve the snippet and bring your product to the top of search engines.</div>
+                                                        </div>
+                                                        <div class="mb-4"><label for="form-product/seo-title" class="form-label">Page title</label><input type="text" class="form-control" id="form-product/seo-title" /></div>
+                                                        <div><label for="form-product/seo-description" class="form-label">Meta description</label><textarea id="form-product/seo-description" class="form-control" rows="2"></textarea></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col-lg-4 col-md-5 pl-1">
+                                            <div class="card card-input w-100">
+                                                <div class="card-body py-3 px-4">
+                                                    <div class="mb-4"><h4 class="mb-0 fs-exact-18">Visibility</h4></div>
+                                                    <div class="mb-4">
+                                                        <label class="form-check"><input type="radio" class="form-check-input" name="status" /><span class="form-check-label">Published</span></label>
+                                                        <label class="form-check"><input type="radio" class="form-check-input" name="status" checked="" /><span class="form-check-label">Scheduled</span></label>
+                                                        <label class="form-check mb-0"><input type="radio" class="form-check-input" name="status" /><span class="form-check-label">Hidden</span></label>
+                                                    </div>
+                                                    <div>
+                                                        <label for="form-product/seo-title" class="form-label">Publish date</label>
+                                                        <input type="text" class="form-control datepicker-here" id="form-product/publish-date" data-auto-close="true" data-language="en" />
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="card card-input w-100 mt-5">
+                                                <div class="card-body py-3 px-4">
+                                                    <div class="mb-4"><h4 class="mb-0 fs-exact-18">Categories</h4></div>
+                                                    <select class="sa-select2 form-select" multiple="">
+                                                        <option selected="">Power tools</option>
+                                                        <option>Screwdrivers</option>
+                                                        <option selected="">Chainsaws</option>
+                                                        <option>Hand tools</option>
+                                                        <option>Machine tools</option>
+                                                        <option>Power machinery</option>
+                                                        <option>Measurements</option>
+                                                    </select>
+                                                    <div class="mt-4 mb-n2"><a href="#">Add new category</a></div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card card-input w-100 mt-5">
+                                                <div class="card-body py-3 px-4">
+                                                    <div class="mb-4"><h4 class="mb-0 fs-exact-18">Tags</h4></div>
+                                                    <select class="sa-select2 form-select" data-tags="true" multiple="">
+                                                        <option selected="">Universe</option>
+                                                        <option selected="">Sputnik</option>
+                                                        <option selected="">Steel</option>
+                                                        <option selected="">Rocket</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- main body end -->
@@ -383,9 +458,6 @@
             </div>
         </section>
         
-        <!-- customize js -->
-        <script src="./asset/js/main.js"></script>
-
         <!-- bootstap script -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
