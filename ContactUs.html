@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- google fronts -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,900&display=swap" rel="stylesheet">
 
         <!-- bootstrap file link --> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -296,14 +296,14 @@
                 <!-- left side navigation end -->
 
                 <div class="MainDivBody">
-                    <!-- fixd in top start laptop -->
-                    <div class="FixedinTop d-flex FixedinTop justify-content-between align-items-center">
+                    <!-- fixd in top start -->
+                    <div class="FixedinTop d-flex justify-content-between align-items-center">
                         <div class="TopSearch d-flex align-items-center">
                             <div class="TopIcon">
                                 <i class="fa-sharp fa-solid fa-bars"></i>
                             </div>
 
-                            <div class="TopSearch">
+                            <div>
                                 <form class="SearchForm">
                                     <input type="text" >
                                 </form>
@@ -324,58 +324,41 @@
                             <div>User Name</div>
                         </div>
                     </div>
-                    <!-- fixd in top end laptop -->
-                    
-                    <!-- fixd in top start mobile -->
-                    <div class="mobileTop d-flex justify-content-between align-items-center">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-3 col-md-1 col-sm-1">
-                                <div class="TopIcon" id="TopIcon">
-                                    <i class="fa-sharp fa-solid fa-bars"></i>
-                                </div>
-                            </div>
-
-                            <div class="col-5 col-md-2 col-sm-3">
-                                <img class="mobilelogo" src="./asset/images/Jamidar.png" alt="">
-                            </div>
-
-                            <div class="col-0 col-md-7 col-sm-7 sercedivmobile">
-                                <div class="TopSearch">
-                                    <form class="SearchForm SearchForm2">
-                                        <input type="text" >
-                                    </form>
-                                </div> 
-                            </div>
-                        
-                            <div class="col-4 col-md-2 col-sm-2">
-                                <div class="TopUser d-flex align-items-center justify-content-end">
-                                    <div class="notification float-right">
-                                        <i class="fa-solid fa-bell"></i>
-                                        <span class="NotificationCont">
-                                            0 
-                                        </span>
-                                    </div>
-        
-                                    <div class="TopIcon float-right" id="TopIcon">
-                                        <i class="fa-solid fa-user-tie"></i>
-                                    </div>
-                                    <!-- <div>User Name</div> -->
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- fixd in top end mobile -->
+                    <!-- fixd in top end -->
 
                     <!-- main body start -->
                     <div class="MainBox">
-                        <div class="PtheTitle">
-                            <div class="UperPath">
-                                <span>
-                                    <a href="./index.html" class="tag">Dashboard</a>
-                                </span>
+                        <div class="heros heros2 text-center">
+                            <h1>Contact Us</h1>
+                        </div>
+
+                        <div class="TabileBox ContactUs row">
+                            <div class="col-lg-6">
+                                <h4 class="mb-4">Submit Your Massage</h4>
+
+                                <form>
+                                    <label for="name">Full Name</label>
+                                    <input type="text" placeholder="Name">
+    
+                                    <label for="name">Email</label>
+                                    <input type="text" placeholder="Email">
+    
+                                    <label for="name">Phone</label>
+                                    <input type="text" placeholder="Phone">
+
+                                    <label for="name">Comment</label>
+                                    
+                                    <textarea>
+
+                                    </textarea> 
+
+                                    <button>Sent <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                                </form>
                             </div>
-                            <h3>Dashboard</h3>
+
+                            <div class="col-lg-6 text-center">
+                                <img src="./asset/images/help3.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                     <!-- main body end -->
@@ -383,9 +366,6 @@
             </div>
         </section>
         
-        <!-- customize js -->
-        <script src="./asset/js/main.js"></script>
-
         <!-- bootstap script -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>

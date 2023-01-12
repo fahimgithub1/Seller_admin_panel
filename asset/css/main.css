@@ -20,15 +20,15 @@ button,
     border-radius: 7px;
     padding: 6px 12px;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
-    background-color: var(--logoColor-2);
+    background-color: var(--logoColor-1);
     text-decoration: none;
 }
 
 button:hover,
 .button:hover{
-    background-color: var(--logoColor-1);
+    background-color: var(--logoColor-2);
     color: white;
 }
 
@@ -44,6 +44,10 @@ button:hover,
 
 a{
     text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .tag{
@@ -259,7 +263,7 @@ a{
     }
 
     .PtheTitle{
-        margin-top: var(--Margin-Top);
+        margin-top: 30px;
     }
 
     .UperPath{
@@ -363,8 +367,311 @@ a{
         background-color: #900;
         color: white;
     }
+
+    .Pages{
+        padding-bottom: 1px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #3d464d;
+        background-color: #ffd333;
+        border-color: #ffd333;
+    }
+
+    .page-link {
+        font-size: 14px;
+    }
+
+    .Pages select{
+        margin-left: .4rem;
+        border-radius: 5px;
+    }
 /* main div end */
 
+/* Customer Details start */
+.borderDiv{
+    height: 100px;
+}
+
+.CustomerImg{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px !important;
+    overflow: hidden;
+}
+
+.CustomerProfile{
+    padding: 20px 10px;
+    border-bottom: 1px solid rgb(144, 144, 144);
+}
+
+.CustomerProfile h4{
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+}
+
+.CustomerProfile p{
+    margin-bottom: 8px;
+}
+
+.CustomerProfileInfo{
+    padding: 20px 10px;
+}
+
+.CustomerProfileInfo h4{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+.CustomerProfileInfo p{
+   font-size: 14px;
+}
+
+.CustomerComment textarea{
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    min-height: 99px;
+    max-height: 99px;
+    padding: 10px;
+    text-align: left;
+    outline: none;
+    margin: 0;
+    border: 1px solid rgb(151, 151, 151);
+    background-color: #f4f7fb;
+}
+
+.OrdersText{
+    padding: 15px 10px;
+    display: flex;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    justify-content: space-between;
+}
+
+.OrdersText h4,
+.OrdersText p{
+    margin-bottom: 0;
+}
+
+.CustomerTable tbody{
+    width: 100%;
+}
+
+.CustomerTable .TableDiv{
+    overflow-x: scroll;
+}
+
+.CustomerTable .TableDiv td{
+    width: 150px;
+}
+
+.CustomerAddressDiv{
+    padding-bottom: 15px;
+}
+
+.CustomerAddress{
+    padding: 10px 10px;
+    padding-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.CustomerAddress p{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.CustomerAddress i{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.CustomerAddress i:hover{
+    border: 1px solid black;
+}
+
+.CustomerBtn{
+    margin-right: .5rem;
+}
+
+.Paid{
+    border-radius: 3px;
+    padding: 2px 10px;
+    color: #000;
+    background-color: #bebebe;
+}
+
+.Paid2{
+    border-radius: 3px;
+    padding: 2px 10px;
+    color: #000;
+    background-color: #93c685;
+}
+/* Customer Details start */
+
+/* help center start */
+.heros{
+    border-radius: 12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(215, 215, 215);
+}
+
+.heros h1{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.heros form input{
+    outline: none;
+    border: none;
+    height: 38px;
+    width: 100%;
+    padding-left: 40px;
+    border-radius: 5px;
+}
+
+.heros form{
+    margin: auto;
+    width: 400px;
+    position: relative;
+}
+
+.heros form label{
+    padding: 4px;
+    top: 4px;
+    left: 8px;
+    font-weight: 900;
+    position: absolute;
+}
+
+.FQAQuestin{
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.FQAQuestin h4{
+   font-weight: 600;
+   margin-bottom: 15px;
+}
+
+.FQAQuestin p{
+   margin-bottom: 10px;
+}
+
+.FQAQuestin a{
+    display: block;
+   padding-top: 10px;
+} 
+
+.heros2 h1{
+    margin-bottom: 0;
+}
+
+.ContactUs{
+    padding: 20px;
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.ContactUs input,
+.ContactUs label{
+    width: 100%;
+}
+
+.ContactUs h4,
+.tab-pane h4{
+    font-weight: 600;
+}
+
+.ContactUs label,
+.tab-pane label{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.ContactUs input,
+.tab-pane input{
+    padding: 7px 10px;
+    outline: none;
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+
+.ContactUs form button,
+.tab-pane form button{
+    font-size: 20px;
+    padding: 7px 25px !important;
+}
+
+.ContactUs form button i,
+.tab-pane form button i{ 
+    margin-left: .5rem;
+}
+
+.ContactUs form textarea,
+.tab-pane form textarea{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    outline: none;
+    border-radius: 7px;
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+.ContactUs img{ 
+    width: auto;
+    max-width: 100%;
+    border-radius: 12px;
+}
+/* help center end */
+
+/* Profile start */
+.tab-pane{
+    margin-top: 20px;
+}
+
+.Profile{
+    padding: 20px 10px;
+}
+
+.tab-pane h4{
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-pane label{
+    width: 300px;
+}
+
+.tab-pane .input2,
+.tab-pane select{
+    padding: 4px 10px;
+    width: 500px;
+}
+
+.tab-pane select{
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link{
+    color: black;
+}
 /* copy */
 
 
@@ -445,6 +752,11 @@ a{
 
         .mobileTop{
             height: 92px;
+        }
+
+        .TableDiv .TableDiv1{
+            overflow-x: scroll;
+            margin-bottom: 10px;
         }
     }
 
