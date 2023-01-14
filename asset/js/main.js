@@ -2,10 +2,14 @@
 
 const nevClick = document.getElementById("TopIcon");
 nevClick.addEventListener('click',()=>{
-    const leftitem = document.querySelector(".LeftSudeNav");
+    const leftitem = document.querySelector(".ShowOnMobile");
     leftitem.style.display = "block";
 })
 
+function MobileTopCros(){
+    const leftitem = document.querySelector(".ShowOnMobile");
+    leftitem.style.display = "none";
+}
 
 // add new users
 // const addnewUser = document.getElementById("addnewUser");
