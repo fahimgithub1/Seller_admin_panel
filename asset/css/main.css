@@ -352,6 +352,7 @@ a:hover{
 
     .TableDiv{
         padding: 0px 15px;
+        overflow-x: scroll;
     }
 
     .table input{
@@ -541,6 +542,7 @@ a:hover{
     border-radius: 3px;
     padding: 2px 10px;
     color: #000;
+    text-align: center;
     cursor: pointer;
     background-color: #bebebe;
 }
@@ -550,6 +552,7 @@ a:hover{
     padding: 2px 10px;
     color: #000;
     cursor: pointer;
+    text-align: center;
     background-color: #93c685;
 }
 /* Customer Details start */
@@ -696,7 +699,7 @@ a:hover{
 .tab-pane .input2,
 .tab-pane select{
     padding: 4px 10px;
-    width: 500px;
+    width: 388px;
 }
 
 .tab-pane select{
@@ -1013,12 +1016,7 @@ a:hover{
             display: none;
         }
 
-        .mobileTop{
-            /* height: 92px;
-             */
-        }
-
-        .TableDiv .TableDiv1{
+        .TableDiv1{
             overflow-x: scroll;
             margin-bottom: 10px;
         }
@@ -1026,13 +1024,124 @@ a:hover{
         .mobilelogo{
             max-width: 120px;
         }
+
+        .Page{
+            justify-items: center;
+        }
+
+        .Pages span{
+            display: none;
+        }
     }
 
     /* mobile */
     @media screen and (max-width: 575px) {
-        /* .TopSearch{
-            margin-right: -15px;
-        } */
+        .MainBox {
+            padding: 9px 8px;
+        }
+
+        .button {
+            display: block;
+            font-size: 13px;
+            padding: 6px 8px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .button i{
+            display: none;
+        }
+
+        .UperPath {
+            font-size: 15px;
+        }
+
+        .UperPath h3{
+            font-size: 20px;
+        }
+
+        .addCatagori{
+            width: 130px;
+        }
+
+        .addCustomer{
+            width: 115px;
+        }
+
+        .CustomerBtn{
+            margin-bottom: .3rem;
+        }
+
+        .TabileBox, .EditminDIv {
+            margin-bottom: 1px;
+        }
+
+        .OrderOverview th {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .heros {
+            padding-top: 29px;
+            padding-bottom: 40px;
+        }
+
+        .heros form {
+            width: 70%;
+        }
+
+        .ManageUser{
+            flex-direction: column;
+        }
+        
+        .addUser {
+            padding: 20px 10px;
+        }
+
+        .tab-pane label {
+            width: 257px;
+        }
+
+        .tab-pane .input2, 
+        .tab-pane select {
+            padding: 4px 10px;
+            width: 100%;
+        }
+
+        .tab-pane select {
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .Folder i {
+            color: #ffd333;
+            font-size: 36px;
+        }
+        
+        .Folder .FolderDrive p {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .Folder .FolderDrive .FolderCard {
+            padding: 5px;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .Folder {
+            padding: 12px;
+            padding-top: 0;
+        }
+
+        .Folder .FolderDrive .icon {
+            margin-right: 10px;
+        }
+
+        .Folder h4 {
+            margin-bottom: 10px;
+        }
     }
 /* responsive end */
 
