@@ -391,16 +391,19 @@ a:hover{
 
     .hidden{
         background-color: rgb(216 216 216);
+        width: 120px;
     }
 
     .visibl{
         background-color: #245900;
         color: white;
+        width: 120px;
     }
 
     .visiblRed{
         background-color: #900;
         color: white;
+        width: 120px;
     }
 
     .Pages{
@@ -544,6 +547,7 @@ a:hover{
     color: #000;
     text-align: center;
     cursor: pointer;
+    width: 130px;
     background-color: #bebebe;
 }
 
@@ -553,6 +557,7 @@ a:hover{
     color: #000;
     cursor: pointer;
     text-align: center;
+    width: 130px;
     background-color: #93c685;
 }
 /* Customer Details start */
