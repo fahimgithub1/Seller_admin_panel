@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Seller Admin Panel</title>
+        
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- google fronts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,900&display=swap" rel="stylesheet">
+
+        <!-- bootstrap file link --> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet"/>
+        
+        <link rel="stylesheet" href="./asset/css/chat.css">
+        <link rel="stylesheet" href="./asset/css/main.css">
+
+    </head>
+
+    <body>
+        <section>
+            <div class="container MainDiv">
+                <!-- left side navigation start -->
+                    <!-- computer start -->
+                    <div class="LeftSudeNav hiddeOnMobile">
+                        <div class="SellcenterLogo text-center">
+                            <a href="./index.html">
+                                <img src="./asset/images/Jamidar.png" alt="Logo" >
+                            </a>
+                        </div>
+
+                        <div class="LeftSideList">
+                            <ul>
+                                <!-- Dashbord -->
+                                <li>
+                                    <a href="./index.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-chart-line"></i>
+                                            </p>
+                                            Dashboard
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <!-- Product -->
+                                <li>
+                                    <a class="LeftSideListA justify-content-between collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </p>
+                                            Product
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <a href="./ProductLitst.html" class="card-bodyA">
+                                                Product List
+                                            </a>
+                                        </div>
+
+                                        <div class="card card-body">
+                                            <a href="./ProductAdd.html" class="card-bodyA">
+                                                Product Upload
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./CatagoriList.html" class="card-bodyA">
+                                                Categories List
+                                            </a>
+                                        </div>
+
+                                        <div class="card card-body">
+                                            <a href="./CatagotiAdd.html" class="card-bodyA">
+                                                Categories Add
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- customer -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-user"></i>
+                                            </p>
+                                            Customer
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample2" style="">
+                                        <div class="card card-body">
+                                            <a href="./CustomerList.html" class="card-bodyA">
+                                                Customer List
+                                            </a>
+                                        </div>
+
+                                        <div class="card card-body">
+                                            <a href="./CustomerDetails.html" class="card-bodyA">
+                                                Customer Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Order & Rating -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa fa-hammer"></i>
+                                            </p>
+                                            Order & Rating
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample3">
+                                        <div class="card card-body">
+                                            <a href="./OrderList.html" class="card-bodyA">
+                                                Order List
+                                            </a>
+                                        </div>
+
+                                        <div class="card card-body">
+                                            <a href="./ProductRetun.html" class="card-bodyA">
+                                                Product Retun
+                                            </a>
+                                        </div>
+
+                                        <!-- <div class="card card-body">
+                                            <a href="./Rating.html" class="card-bodyA">
+                                                Rating
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </li>
+
+                                <!-- File Mabager -->
+                                <li>
+                                    <a href="./FileManager.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-folder"></i>
+                                            </p>
+                                            File Manager
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- Finance -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-money-check-dollar"></i>
+                                            </p>
+                                            Finance
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample4">
+                                        <div class="card card-body">
+                                            <a href="./OrderOverview.html" class="card-bodyA">
+                                                Order Overview
+                                            </a>
+                                            
+                                            <a href="./TranscationOverview.html" class="card-bodyA">
+                                                Transcation Overview
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Seller Support -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-headset"></i>
+                                            </p>
+                                            Seller Support
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample7">
+                                        <div class="card card-body">
+                                            <a href="./ContactUs.html" class="card-bodyA">
+                                                Contact Us
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./HelpCenter.html" class="card-bodyA">
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- chat -->
+                                <li>
+                                    <a href="./chat.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-comment"></i>
+                                            </p>
+                                            chat
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <!-- Account & Setting -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-sliders"></i>
+                                            </p>
+                                            Account & Setting
+                                        </div>
+
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+
+                                    <div class="collapse" id="collapseExample5">
+                                        <div class="card card-body">
+                                            <a href="./Profile.html" class="card-bodyA">
+                                                Profile
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./UserMabagerment.html" class="card-bodyA">
+                                                User Mabagerment
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <!-- Sellar Document -->
+                                <li>
+                                    <a class="LeftSideListA w-100" href="./selllerDocument.html">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-address-book"></i>
+                                            </p>
+                                            Sellar Document
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- computer end -->
+
+                    <!-- mobile start -->
+                    <div class="LeftSudeNav ShowOnMobile">
+                        <div class="SellcenterLogo text-center">
+                            <div class="MobileMenuCros" onclick="MobileTopCros()">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+    
+                            <a href="./index.html">
+                                <img src="./asset/images/Jamidar.png" alt="Logo" >
+                            </a>
+                        </div>
+    
+                        <div class="LeftSideList">
+                            <ul>
+                                <!-- Dashbord -->
+                                <li>
+                                    <a href="./index.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-chart-line"></i>
+                                            </p>
+                                            Dashboard
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <!-- Product -->
+                                <li>
+                                    <a class="LeftSideListA justify-content-between collapsed" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </p>
+                                            Product
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <a href="./ProductLitst.html" class="card-bodyA">
+                                                Product List
+                                            </a>
+                                        </div>
+    
+                                        <div class="card card-body">
+                                            <a href="./ProductAdd.html" class="card-bodyA">
+                                                Product Upload
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./CatagoriList.html" class="card-bodyA">
+                                                Categories List
+                                            </a>
+                                        </div>
+    
+                                        <div class="card card-body">
+                                            <a href="./CatagotiAdd.html" class="card-bodyA">
+                                                Categories Add
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <!-- customer -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-user"></i>
+                                            </p>
+                                            Customer
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample2" style="">
+                                        <div class="card card-body">
+                                            <a href="./CustomerList.html" class="card-bodyA">
+                                                Customer List
+                                            </a>
+                                        </div>
+    
+                                        <div class="card card-body">
+                                            <a href="./CustomerDetails.html" class="card-bodyA">
+                                                Customer Details
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <!-- Order & Rating -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa fa-hammer"></i>
+                                            </p>
+                                            Order & Rating
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample3">
+                                        <div class="card card-body">
+                                            <a href="./OrderList.html" class="card-bodyA">
+                                                Order List
+                                            </a>
+                                        </div>
+    
+                                        <div class="card card-body">
+                                            <a href="./ProductRetun.html" class="card-bodyA">
+                                                Product Retun
+                                            </a>
+                                        </div>
+    
+                                        <!-- <div class="card card-body">
+                                            <a href="./Rating.html" class="card-bodyA">
+                                                Rating
+                                            </a>
+                                        </div> -->
+                                    </div>
+                                </li>
+    
+                                <!-- File Mabager -->
+                                <li>
+                                    <a href="./FileManager.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-folder"></i>
+                                            </p>
+                                            File Manager
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <!-- Finance -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-money-check-dollar"></i>
+                                            </p>
+                                            Finance
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample4">
+                                        <div class="card card-body">
+                                            <a href="./OrderOverview.html" class="card-bodyA">
+                                                Order Overview
+                                            </a>
+                                            
+                                            <a href="./TranscationOverview.html" class="card-bodyA">
+                                                Transcation Overview
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <!-- Seller Support -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-headset"></i>
+                                            </p>
+                                            Seller Support
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample7">
+                                        <div class="card card-body">
+                                            <a href="./ContactUs.html" class="card-bodyA">
+                                                Contact Us
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./HelpCenter.html" class="card-bodyA">
+                                                Help Center
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <!-- Chat start -->
+                                <li>
+                                    <a href="./chat.html" class="LeftSideListA w-100">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-comment"></i>
+                                            </p>
+                                            chat
+                                        </div>
+                                    </a>
+                                </li>
+    
+                                <!-- Account & Setting -->
+                                <li>
+                                    <a class="LeftSideListA w-100  collapsed" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-sliders"></i>
+                                            </p>
+                                            Account & Setting
+                                        </div>
+    
+                                        <span>
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                    </a>
+    
+                                    <div class="collapse" id="collapseExample5">
+                                        <div class="card card-body">
+                                            <a href="./Profile.html" class="card-bodyA">
+                                                Profile
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="card card-body">
+                                            <a href="./UserMabagerment.html" class="card-bodyA">
+                                                User Mabagerment
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+    
+                                <!-- Sellar Document -->
+                                <li>
+                                    <a class="LeftSideListA w-100" href="./selllerDocument.html">
+                                        <div>
+                                            <p class="LeftIconSpan">
+                                                <i class="fa-solid fa-address-book"></i>
+                                            </p>
+                                            Sellar Document
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile end -->
+                <!-- left side navigation end -->
+
+                <div class="MainDivBody">
+                    <!-- fixd in top start laptop -->
+                    <div class="FixedinTop d-flex FixedinTop justify-content-between align-items-center">
+                        <div class="TopSearch d-flex align-items-center">
+                            <div class="TopIcon">
+                                <i class="fa-sharp fa-solid fa-bars"></i>
+                            </div>
+
+                            <div class="TopSearch">
+                                <form class="SearchForm">
+                                    <input type="text" >
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="TopUser d-flex align-items-center">
+                            <div class="notification">
+                                <i class="fa-solid fa-bell"></i>
+                                <span class="NotificationCont">
+                                    0 
+                                </span>
+                            </div>
+
+                            <div class="TopIcon">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>User Name</div>
+                        </div>
+                    </div>
+                    <!-- fixd in top end laptop -->
+                    
+                    <!-- fixd in top start mobile -->
+                    <div class="mobileTop d-flex justify-content-between align-items-center">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-3 col-md-1 col-sm-1">
+                                <div class="TopIcon" id="TopIcon">
+                                    <i class="fa-sharp fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-2 col-sm-3 d-flex justify-content-center align-items-center">
+                                <img class="mobilelogo" src="./asset/images/Jamidar.png" alt="">
+                            </div>
+
+                            <div class="col-0 col-md-7 col-sm-7 sercedivmobile">
+                                <div class="TopSearch">
+                                    <form class="SearchForm SearchForm2">
+                                        <input type="text" >
+                                    </form>
+                                </div> 
+                            </div>
+                        
+                            <div class="col-3 col-md-2 col-sm-2">
+                                <div class="TopUser d-flex align-items-center justify-content-end">
+                                    <div class="notification float-right">
+                                        <i class="fa-solid fa-bell"></i>
+                                        <span class="NotificationCont">
+                                            0 
+                                        </span>
+                                    </div>
+        
+                                    <div class="TopIcon float-right" id="TopIcon">
+                                        <i class="fa-solid fa-user-tie"></i>
+                                    </div>
+                                    <!-- <div>User Name</div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fixd in top end mobile -->
+
+                    <!-- main body start -->
+                    <div class="MainBox">
+                        <!-- char-area -->
+                        <section class="message-area">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="chat-area">
+                                            <!-- chatlist -->
+                                            <div class="chatlist">
+                                                <div class="modal-dialog-scrollable">
+                                                    <div class="modal-content">
+                                                        <div class="chat-header">
+                                                            <div class="msg-search">
+                                                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search" aria-label="search">
+                                                                <a class="add" href="#"><img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/add.svg" alt="add"></a>
+                                                            </div>
+
+                                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link active" id="Open-tab" data-bs-toggle="tab" data-bs-target="#Open" type="button" role="tab" aria-controls="Open" aria-selected="true">Open</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                    <button class="nav-link" id="Closed-tab" data-bs-toggle="tab" data-bs-target="#Closed" type="button" role="tab" aria-controls="Closed" aria-selected="false">Closed</button>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <!-- chat-list -->
+                                                            <div class="chat-lists">
+                                                                <div class="tab-content" id="myTabContent">
+                                                                    <div class="tab-pane fade show active" id="Open" role="tabpanel" aria-labelledby="Open-tab">
+                                                                        <!-- chat-list -->
+                                                                        <div class="chat-list">
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            <span class="active"></span>
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Mehedi Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Ryhan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Malek Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Sadik Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Bulu </h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Maria SK</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Dipa Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Jhon Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Tumpa Moni</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Payel Akter</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Baby Akter</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Zuwel Rana</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Habib </h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Jalal Ahmed</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Hasan Ali</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="#" class="d-flex align-items-center">
+                                                                            <div class="flex-shrink-0">
+                                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                            </div>
+                                                                            <div class="flex-grow-1 ms-3">
+                                                                            <h3>Mehedi Hasan</h3>
+                                                                            <p>front end developer</p>
+                                                                            </div>
+                                                                        </a>
+
+                                                                        </div>
+                                                                        <!-- chat-list -->
+                                                                    </div>
+
+                                                                    <div class="tab-pane fade" id="Closed" role="tabpanel" aria-labelledby="Closed-tab">
+
+                                                                        <!-- chat-list -->
+                                                                        <div class="chat-list">
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                    <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                    <span class="active"></span>
+                                                                                </div>
+
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                    <h3>Mehedi Hasan</h3>
+                                                                                    <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Ryhan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Malek Hasan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Sadik Hasan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Bulu </h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Maria SK</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Dipa Hasan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Jhon Hasan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Tumpa Moni</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Payel Akter</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Baby Akter</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Zuwel Rana</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Habib </h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Jalal Ahmed</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Hasan Ali</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+                                                                            <a href="#" class="d-flex align-items-center">
+                                                                                <div class="flex-shrink-0">
+                                                                                <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                                                </div>
+                                                                                <div class="flex-grow-1 ms-3">
+                                                                                <h3>Mehedi Hasan</h3>
+                                                                                <p>front end developer</p>
+                                                                                </div>
+                                                                            </a>
+
+                                                                        </div>
+                                                                        <!-- chat-list -->
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- chat-list -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- chatlist -->
+
+                                            <!-- chatbox -->
+                                            <div class="chatbox">
+                                                <div class="modal-dialog-scrollable">
+                                                <div class="modal-content">
+                                                    <div class="msg-head">
+                                                    <div class="row">
+                                                        <div class="col-8">
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="chat-icon"><img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/arroleftt.svg" alt="image title"></span>
+                                                            <div class="flex-shrink-0">
+                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/user.png" alt="user img">
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3">
+                                                            <h3>Mehedi Hasan</h3>
+                                                            <p>front end developer</p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                        <ul class="moreoption">
+                                                            <li class="navbar nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                                                <li>
+                                                                <hr class="dropdown-divider">
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                            </ul>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="modal-body">
+                                                    <div class="msg-body">
+                                                        <ul>
+                                                        <li class="sender">
+                                                            <p> Hey, Are you there? </p>
+                                                            <span class="time">10:06 am</span>
+                                                        </li>
+                                                        <li class="sender">
+                                                            <p> Hey, Are you there? </p>
+                                                            <span class="time">10:16 am</span>
+                                                        </li>
+                                                        <li class="repaly">
+                                                            <p> Last Minute Festive Packages From Superbreak</p>
+                                                            <span class="time">10:20 am</span>
+                                                        </li>
+                                                        <li class="sender">
+                                                            <p> Hey, Are you there? </p>
+                                                            <span class="time">10:26 am</span>
+                                                        </li>
+                                                        <li class="sender">
+                                                            <p> Hey, Are you there? </p>
+                                                            <span class="time">10:32 am</span>
+                                                        </li>
+                                                        <li class="repaly">
+                                                            <p>Last Minute Festive Packages From Superbreak</p>
+                                                            <span class="time">10:35 am</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="divider">
+                                                            <h6>Today</h6>
+                                                            </div>
+                                                        </li>
+
+                                                        <li class="repaly">
+                                                            <p> Last Minute Festive Packages From Superbreak</p>
+                                                            <span class="time">10:36 am</span>
+                                                        </li>
+                                                        <li class="repaly">
+                                                            <p>Last Minute Festive Packages From Superbreak</p>
+                                                            <span class="time">junt now</span>
+                                                        </li>
+
+                                                        </ul>
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="send-box">
+                                                    <form action="">
+                                                        <input type="text" class="form-control" aria-label="message…" placeholder="Write message…">
+
+                                                        <button type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+                                                    </form>
+
+                                                    <div class="send-btns">
+                                                        <div class="attach">
+                                                        <div class="button-wrapper">
+                                                            <span class="label">
+                                                            <img class="img-fluid" src="https://mehedihtml.com/chatbox/assets/img/upload.svg" alt="image title"> attached file
+                                                            </span><input type="file" name="upload" id="upload" class="upload-box" placeholder="Upload File" aria-label="Upload File">
+                                                        </div>
+
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Select template</option>
+                                                            <option>Template 1</option>
+                                                            <option>Template 2</option>
+                                                        </select>
+
+                                                        <div class="add-apoint">
+                                                            <a href="#" data-toggle="modal" data-target="#exampleModal4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
+                                                                <path d="M8 16C3.58862 16 0 12.4114 0 8C0 3.58862 3.58862 0 8 0C12.4114 0 16 3.58862 16 8C16 12.4114 12.4114 16 8 16ZM8 1C4.14001 1 1 4.14001 1 8C1 11.86 4.14001 15 8 15C11.86 15 15 11.86 15 8C15 4.14001 11.86 1 8 1Z" fill="#7D7D7D" />
+                                                                <path d="M11.5 8.5H4.5C4.224 8.5 4 8.276 4 8C4 7.724 4.224 7.5 4.5 7.5H11.5C11.776 7.5 12 7.724 12 8C12 8.276 11.776 8.5 11.5 8.5Z" fill="#7D7D7D" />
+                                                                <path d="M8 12C7.724 12 7.5 11.776 7.5 11.5V4.5C7.5 4.224 7.724 4 8 4C8.276 4 8.5 4.224 8.5 4.5V11.5C8.5 11.776 8.276 12 8 12Z" fill="#7D7D7D" />
+                                                            </svg> Appoinment</a>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <!-- chatbox -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- char-area -->
+                    </div>
+                    <!-- main body end -->
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- customize js -->
+        <script src="./asset/js/main.js"></script>
+        
+        <!-- fsd -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            jQuery(document).ready(function () {
+                $(".chat-list a").click(function () {
+                    $(".chatbox").addClass("showbox");
+                    return false;
+                });
+
+                $(".chat-icon").click(function () {
+                    $(".chatbox").removeClass("showbox");
+                });
+            });
+        </script>
+
+        <!-- bootstap script -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+</html>
